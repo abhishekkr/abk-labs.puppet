@@ -1,3 +1,4 @@
+```ASCII
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     ,^.    .^.    .^.    .^.    .^.    .^.    .^.    .^.
@@ -13,10 +14,16 @@
  license: http://www.apache.org/licenses/LICENSE-2.0.txt
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-[+] puppet-modules
+[+] Puppet : Beginner's Concept Guide
  |
- |[+] users
+ |[+] QuickStart
+ |[+] Road to Modules
+ |[+] Modules much more
+ |[+] Where's my Data?
+ |
+ |[+] W.I.P.
  |
 [+]
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+```
