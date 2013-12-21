@@ -94,6 +94,7 @@ class httpd{
   include httpd::config
   include httpd::service
 }
+```
 
 
 a manifest just installing httpd:    <MODULE_PATH>/httpd/manifests/install.pp
@@ -101,7 +102,7 @@ a manifest just installing httpd:    <MODULE_PATH>/httpd/manifests/install.pp
 class httpd::install {
   package {'httpd': ensure => 'installed'}
 }
-
+```
 
 a manifest just configuring httpd:    <MODULE_PATH>/httpd/manifests/config.pp
 ```Ruby
