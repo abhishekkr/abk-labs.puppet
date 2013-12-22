@@ -1,5 +1,5 @@
--> ## Eden Guide to <-
--> # Puppet <-
+## Eden Guide to
+# Puppet
 
 ---
 
