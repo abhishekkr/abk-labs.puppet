@@ -1,9 +1,14 @@
-# Puppet : A Beginner's Concept Guide
+-> ## Eden Guide to <-
+-> # Puppet <-
+
+---
+
+# Chapter.1 Kickstart
 
 ---
 
 ## What  it  is?  When  is  it  required?
-(for all new guys, who came here while just browsing internet)
+#### (for all new guys, who came here while just browsing internet)
 
 >
 > Puppet is an OpenSource automated configuration management framework (which means a tool that knows how to configure all machines to a deterministic state once you provide it the required set of manifests pulling the correct strings).
@@ -81,12 +86,12 @@ Modules can be created in any design preference. Normally it works by having dif
 Taking example of a module for 'apache httpd'.
 For a very basic library, you might wanna structure your module like:
 
-* a directory base for your module:  <MODULE_PATH>/httpd/
-* a directory in module to serve static files:   <MODULE_PATH>/httpd/files
-* static configuration file for httpd:   <MODULE_PATH>/httpd/files/myhttpd.conf
+* a directory base for your module:  &lt;MODULE_PATH&gt;/httpd/
+* a directory in module to serve static files:   &lt;MODULE_PATH&gt;/httpd/files
+* static configuration file for httpd:   &lt;MODULE_PATH&gt;/httpd/files/myhttpd.conf
 * AccessFileName .acl
-* directory to hold your manifests in module:   <MODULE_PATH>/httpd/manifests/
-* a complete solution manifest:   <MODULE_PATH>/httpd/manifests/init.pp
+* directory to hold your manifests in module:   &lt;MODULE_PATH&gt;/httpd/manifests/
+* a complete solution manifest:   &lt;MODULE_PATH&gt;/httpd/manifests/init.pp
 
 ```Ruby
 class httpd{
@@ -97,14 +102,14 @@ class httpd{
 ```
 
 
-a manifest just installing httpd:    <MODULE_PATH>/httpd/manifests/install.pp
+a manifest just installing httpd:    &lt;MODULE_PATH&gt;/httpd/manifests/install.pp
 ```Ruby
 class httpd::install {
   package {'httpd': ensure => 'installed'}
 }
 ```
 
-a manifest just configuring httpd:    <MODULE_PATH>/httpd/manifests/config.pp
+a manifest just configuring httpd:    &lt;MODULE_PATH&gt;/httpd/manifests/config.pp
 ```Ruby
 class httpd::config{
   file {'/etc/httpd/conf.d/httpd.conf':
@@ -115,7 +120,7 @@ class httpd::config{
 ```
 
 
-a manifest just handling httpd service:  <MODULE_PATH>/httpd/manifests/service.pp
+a manifest just handling httpd service:  &lt;MODULE_PATH&gt;/httpd/manifests/service.pp
 ```Ruby
 class httpd::service{
   service{'httpd': ensure => 'running' }
